@@ -51,3 +51,9 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
    .catch((err) => {
       console.log(`Database connection error: ${err}`);
    })
+
+   
+//Error handler
+app.use((err, req, res, next) => {
+   res.status(400).json({ error: true, errorMessage: err.message })
+});
