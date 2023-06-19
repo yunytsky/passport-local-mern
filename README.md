@@ -34,6 +34,7 @@ Authentication with passport local strategy. (Mongo, Express, React (with Vite) 
 </picture>
 
 
+
 ## Instructions 
 1. Clone a repository
 2. Cd into server folder
